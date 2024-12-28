@@ -24,10 +24,17 @@ The settings page currently provides two options:
 
 ## Known Issues
 
+#### Website
+
 - Uploading files *might* hang. Give it some time before trying to reload the page
-- Touch coordinates may be inaccurate if the canvas does not fill the screen
-- On iOS, engines might freeze when hiding the toolbar on safari
-- RSDKv5: Native ModAPI probably won't work. Fine for legacy games though
+
+#### Engines
+
+- The speed of the engines might be inaccurate to the settings.ini configuration. For now, just lower your refresh rate™️
+- The engine might freeze when hiding the toolbar on safari
+- Touch coordinates may be inaccurate if the canvas' size is not perfectly scaled
+- [RSDKv5/U Specific] The engine(s) might fail to start if you are on an older browser, mobile browser, or if the site is hosted over http instead of https 
+- [RSDKv5/U Specific] Native ModAPI probably won't work. Fine for legacy games though
 
 ## Building the Website
 
@@ -42,18 +49,11 @@ npm run build
 
 This will output a static site, located at (root)/out.
 
-### Hosting the website with npx
+### Hosting the website locally
 
 Run this command in the repository root:
 ```bash
 npx serve@latest out
-```
-
-### Hosting the website with python
-
-Run this command in (repo root)/out.
-```
-python -m http.server
 ```
 
 ## Building the engines
@@ -62,6 +62,7 @@ Each port has their own build instructions. You can learn how to build them by v
 * [RSDKv2-Decompilation](https://github.com/Jdsle/RSDKv2-Decompilation/tree/web)
 * [RSDKv3-Decompilation](https://github.com/Jdsle/RSDKv3-Decompilation/tree/web)
 * [RSDKv4-Decompilation](https://github.com/Jdsle/RSDKv4-Decompilation/tree/web)
+* [RSDKv5-Decompilation](https://github.com/Jdsle/RSDKv5-Decompilation/tree/web)
 
 While not an engine - thought I'd include this here anyways
 * [RSDK-Library-FilesModule](https://github.com/Jdsle/RSDK-Library-FilesModule)
