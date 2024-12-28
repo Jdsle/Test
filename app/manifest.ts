@@ -15,7 +15,7 @@ export default function manifest(): MetadataRoute.Manifest {
         "type": "image/png"
       },
       {
-        "src": ".icons/RSDK_Maskable.png",
+        "src": "./icons/RSDK_Maskable.png",
         "sizes": "128x128",
         "type": "image/png",
         "purpose": "maskable"
