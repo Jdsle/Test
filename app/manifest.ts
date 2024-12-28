@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'RSDK-Library',
+    name: 'RSDK',
     short_name: 'RSDK',
     start_url: '.',
-    theme_color: "#231F20",
+    theme_color: "#161616",
     display: 'standalone',
     display_override: ["window-controls-overlay"],
     icons: [
