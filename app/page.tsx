@@ -48,7 +48,7 @@ const PageContent: React.FC = () => {
     const { currentPath, setCurrentPath } = Path.useCurrentPath();
     const [open, setOpen] = React.useState(false);
     const isMobile = useIsMobile();
-    const { toggleSidebar } = Sidebar.useSidebar()
+    const { toggleSidebar } = Sidebar.useSidebar();
 
     return (
         <>
