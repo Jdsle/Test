@@ -81,7 +81,7 @@ export function AppSidebar({ onNavigate, ...props }: Props) {
             <Sidebar.Sidebar {...props}>
                 <Sidebar.SidebarHeader className='PWA-Title-Draggable w-full h-12 pl-4 shrink-0 border-b'>
                     <div className="w-full h-full flex items-center gap-2">
-                        <div onClick={toggleSidebar} className='flex items-center justify-center aspect-square size-6'>
+                        <div onClick={toggleSidebar} className='PWA-Title-NonDraggable flex items-center justify-center aspect-square size-6'>
                             <img src="./assets/Retro.png" alt="header logo" className='h-full w-full object-contain' />
                         </div>
                         <span className="truncate font-semibold">RSDK Library</span>
